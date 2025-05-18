@@ -25,7 +25,7 @@ print("Fotoğraf açıklaması:", caption)
 import openai
 
 # OpenAI API anahtarını buraya gir
-client = openai.OpenAI(api_key = "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")
+client = openai.OpenAI(api_key = "tokunu yaz")
 
 def hikaye_olustur(kullanici_cumlesi):
     prompt = f"'{kullanici_cumlesi}' Create a creative and short story based on the sentence."
@@ -58,7 +58,7 @@ print(sonuc)
 import openai
 
 # DeepSeek API anahtarını buraya yaz
-api_key = "sk-e3739b11f4e14d7aa60b9b022f0e67a4"
+api_key = "tokunu yaz"
 
 # DeepSeek API URL’si
 base_url = "https://api.deepseek.com/v1"
@@ -94,7 +94,7 @@ print(hikaye)
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/gpt2-"
-API_TOKEN = "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"
+API_TOKEN = "token yaz"
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
