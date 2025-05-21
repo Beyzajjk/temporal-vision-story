@@ -1,16 +1,28 @@
 # run_all.py
 
-def main():
-    print("Segmentasyon modülü başlatılıyor...")
-    # import segmentation.segment gibi yerleri sonra ekleyeceksin
+from segmentation.segment import segment_image
+from generation.generate import generate_past_future
+from narration.narrate import create_narrative
 
-    print("Görsel üretim başlatılıyor...")
-    # import generation.generate_image
+def run_pipeline(image_path):
+    print("1. Segmenting...")
+    segments = segment_image(image_path)
 
-    print("Metin anlatımı oluşturuluyor...")
-    # import narration.text_narration
+    print("2. Generating past/future...")
+    past_img, future_img = generate_past_future(image_path, segments)
 
-    print("Tüm modüller başarıyla çalıştırıldı.")
+    print("3. Creating narrative...")
+    narrative = create_narrative(segments, past_img, future_img)
+
+    print("\n🎉 Completed")
+    return {
+        "original": image_path,
+        "segments": segments,
+        "past": past_img,
+        "future": future_img,
+        "narrative": narrative
+    }
 
 if __name__ == "__main__":
-    main()
+    result = run_pipeline("assets/example.jpg")
+    print(result["narrative"])
