@@ -1,0 +1,9 @@
+# Sanal ortam klasörü
+venv/
+
+# Pycache dosyaları
+__pycache__/
+*.pyc
+
+# macOS sistem dosyası
+.DS_Store
