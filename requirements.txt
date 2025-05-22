@@ -1,0 +1,10 @@
+Gerekli kutuphaneler.
+Required libraries (Can be changed)
+numpy
+opencv-python
+Pillow
+matplotlib
+torch
+transformers
+diffusers
+gradio
