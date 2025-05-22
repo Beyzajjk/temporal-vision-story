@@ -33,8 +33,7 @@ Tarihi bölgelerin zamansal dönüşümünü analiz etmek
 Eğitimde interaktif tarih anlatımı
 =======
 Temporal Vision Simulator (TVS)
-Bu proje, görsel segmentasyon ve zaman yolculuğu kavramlarını birleştirerek bir görselin geçmiş, şimdi ve gelecekteki hâllerini hem görsel 
-hem metinsel olarak sunan bir sistemdir. Kullanıcılar bir görüntü yükleyerek sahnedeki nesnelerin zaman içindeki evrimini keşfedebilir.
+Bu proje, görsel segmentasyon ve zaman yolculuğu kavramlarını birleştirerek bir görselin geçmiş, şimdi ve gelecekteki hâllerini hem görsel hem metinsel olarak sunan bir sistemdir. Kullanıcılar bir görüntü yükleyerek sahnedeki nesnelerin zaman içindeki evrimini keşfedebilir.
 
 🧩 Proje Modülleri
 1. 🔍 segmentation/
